@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link href="css/body.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <title>Kalkulator walut</title>
+</head>
+
+<body class="body">
+    <h1 class="header">Podręczny kantor</h1>
+    <form class="form js-form">
+        <fieldset class="form__field">
+            <legend class="form__legend">Kalkulator walut</legend>
+            <p>
+                Kwota*:
+                <input class="form__amount js-amount" placeholder="(PLN)Polski Złoty" type="number" name="amount" min="0"
+                    step="0.01" required autofocus>
+            </p>
+            <p>Wybierz walutę:
+                <select class="form__currency js-currency">
+                    <option value="EUR">(EUR) Euro</option>
+                    <option value="USD">(USD) Dolar Amerykański</option>
+                    <option value="GBP">(GBP) Funt Brytyjski</option>
+                    <option value="CHF">(CHF) Frank Szwajcarski</option>
+                    <option value="CZK">(CZK) Korona Czeska</option>
+                    <option value="JPY">(JPY) Jen Japoński</option>
+                </select>
+            </p>
+            <p>
+                <button class="form__button button">Przelicz</button><span class="form__result js-result">N/A</span>
+            </p>
+            <p>
+                Pole oznaczone * jest wymagane.<br>Kurs z dnia: 09-11-2022
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

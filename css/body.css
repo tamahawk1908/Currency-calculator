@@ -11,10 +11,17 @@ html {
     max-width: 400px;
     text-align: left;
     margin: auto;
-    background-color: #e9e9e987;
+    background-image: url("../images/background2.jpg");
+    background-size: cover;
 }
 
 .header {
+    border: 2px solid teal;
+    border-radius: 5px;
+    background-color: teal;
+    margin: 15px auto;
+    width: 255px;
+    color: white;
     text-align: center;
-    text-shadow: 1px 2px teal;
+    text-shadow: 2px 3px teal;
 }
